@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css"> 
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo app encriptador">
+    </header>
+    <main>
+        <section class="seccion1">
+            <textarea class="textarea" name="textoEncriptado" id="textoEncriptado" placeholder="Escribe tu texto aquí" onkeypress="return check(event)"></textarea>
+            <div class="contenedor_aviso">
+                <p id="alerta">⚠Solo se permiten letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="contenedor_botones">
+                <input type="button" value="Encriptar" id="btnEncriptado" class="boton_encriptar" onclick="encriptar()"> 
+                <input type="button" value="Desencriptar" id="btnDesencriptado" class="boton_desencriptar" onclick="desencriptar()"> 
+            </div>
+            <div class="contenedor_botones">
+                <input type="button" value="Copiar" id="btnCopiar" class="boton_desencriptar" onclick="copiarTexto()" disabled> 
+                <input type="button" value="Limpiar" id="btnLimpiar" class="boton_encriptar" onclick="limpiarTexto()" disabled> 
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor_imagen">
+                <img src="img/muñeco.png" alt="" id="imagen">
+            </div>
+            <div class="contenedor_subtitulo">
+                <h3 id="mensaje">Ningún mensaje fue encontrado.</h3>
+            </div>
+            <div class="contenedor_parrafo">
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Desarrollado por Tania Itzel González Torres ©2024 
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
